@@ -142,6 +142,7 @@ ul {
 
 .buscar:hover input {
   width: 240px;
+    transition: 0.5s;  
 }
 
 /* //  MAIN // */
