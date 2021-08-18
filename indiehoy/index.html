@@ -8,15 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" href></script>
 
   <!-- reproductor -->
   <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Poiret+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
 
 
 </head>
@@ -128,10 +127,10 @@
                 </ul>
               </nav>
               <div class="redes">
-                <img src="img/redes_spotify.png" alt="">
-                <img src="img/redes_instagram.png" alt="">
-                <img src="img/redes_facebook.png" alt="">
-                <img src="img/redes_twitter.png" alt="">
+                <img class="spotify" src="img/redes_spotify.png" alt="">
+                <img class="instagram" src="img/redes_instagram.png" alt="">
+                <img class="facebook" src="img/redes_facebook.png" alt="">
+                <img class="twitter" src="img/redes_twitter.png" alt="">
               </div>
             </div>
           </div>
@@ -184,10 +183,10 @@
       </div>
 
       <!-- REPRODUCTOR -->
-      <div class="audio-player" id="skin">			
+      <div class="audio-player" id="skin">
         <div class="holder">
-          <div class="cover">					
-            <img src="assets/cover.jpg">
+          <div class="cover">
+            <img id="cover" src="assets/cover.jpg">
           </div>
           <div class="audio-wrapper" id="player-container" href="javascript:;">
             <audio id="player" preload="metadata" onloadedmetadata="mDur()" ontimeupdate="initProgressBar()">
@@ -206,19 +205,19 @@
                 <span class="time start-time"></span>
                 <input id="dur" type="range" class="range" name="rng" min="0" max="1" step="0.00000001" value="0" onchange="mSet()" style="width: 100%">
                 <span class="time end-time"></span>
-              </div>					
-            </div>					
+              </div>
+            </div>
           </div>
           <div class="playlist">
             <img src="assets/playlist.png">
           </div>
         </div>
         <div class="action">
-          <div>					
-            <a href="#" class="like  shadow">Reproducir en spotify </a>
+          <div>
+            <a id="btn-spot" href="https://open.spotify.com/track/5wANPM4fQCJwkGd4rN57mH?si=5a5cb53061ba444a" target=”_blank” class="like  shadow">Reproducir en spotify </a>
           </div>
         </div>
-      </div>      
+      </div>
 
       <!-- CINE -->
       <div class="seccioncine">
@@ -243,7 +242,40 @@
 
       <!-- INVITANOS UN CAFE -->
       <div class="cafe">
-        <img src="img/cafe.jpg" alt="cafe" class="img-secciones">
+        <div class="cafe-text">
+
+          <h1 id="h1-caf">Invitanos un café</h1>
+          <p id="p-caf">Indie Hoy vive gracias a todos ustedes y en estos momentos dificiles necesitamos tu ayuda.</p>
+          <div class="caf-options">
+            <div class="caf-box" id="caf-box1">
+              <svg class="check" id="check1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+              </svg>
+            </div>
+            <p class="caf-caption">$50</p>
+            <div class="caf-box" id="caf-box2">
+              <svg class="check" id="check2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+              </svg>
+            </div>
+            <p class="caf-caption">$100</p>
+            <div class="caf-box" id="caf-box3">
+              <svg  class="check" id="check3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+              </svg>
+            </div>
+            <p class="caf-caption">$200</p>
+          </div>
+
+
+          <div class="btn-donar">
+            Donar
+          </div>
+        </div>
+      </div>
+
+      <div class="cultura">
+        <img src="img/seccioncultura.jpg" class="img-secciones" alt="cultura">
       </div>
     </div>
 
@@ -258,7 +290,7 @@
 
           <form class="newsletter" action="index.html" method="post">
             <input type="text" id="email" placeholder="Email" value="">
-            <input type="image" name="" value="" src="img/send.png">
+            <input type="image" id="btn-news" value="" src="img/send.png">
           </form>
         </div>
 
@@ -268,18 +300,22 @@
 
         <div class="footer-colum2">
           <h1>Indie Hoy</h1>
-          <a href="#">Acerca de&nbsp;&nbsp;&nbsp;</a>
-          <a href="#">Contacto&nbsp;&nbsp;&nbsp;</a>
-          <a href="#">Términos de uso</a>
+          <a href="#" id="f-1">Acerca de&nbsp;&nbsp;&nbsp;</a>
+          <a href="#" id="f-2">Contacto&nbsp;&nbsp;&nbsp;</a>
+          <a href="#" id="f-3">Términos de uso</a>
 
           <hr class="hr-footer-h">
 
           <div class="footer-redes">
-            <img width="30" height="auto" src="img/redes_spotify.png" id="spotify" alt="">
-            <img width="30" height="auto" src="img/redes_twitter.png" alt="">
-            <img width="30" height="auto" src="img/redes_instagram.png" alt="">
-            <img width="30" height="auto" src="img/redes_facebook.png" alt="">
-            <img width="30" height="auto" src="img/redes_youtube.png" alt="">
+            <a href="https://open.spotify.com/user/indiehoy" target=”_blank”><img width="30" height="auto" src="img/redes_spotify.png" id="spotify" class="spotify" alt=""></a>
+            <a href="https://twitter.com/indiehoy/" target=”_blank”><img width="30" height="auto" src="img/redes_twitter.png" class="twitter" alt=""></a>
+            <a href="https://www.instagram.com/indiehoy/" target=”_blank”><img width="30" height="auto" src="img/redes_instagram.png" class="instagram" alt=""></a>
+            <a href="https://www.facebook.com/indiehoy/" target=”_blank”><img width="30" height="auto" src="img/redes_facebook.png" class="facebook" alt=""></a>
+            <a href="https://www.youtube.com/channel/UClw0F0SxR89lewQW0oSv1TQ" target=”_blank”><img width="30" height="auto" src="img/redes_youtube.png" class="youtube" alt=""></a>
+
+
+
+
           </div>
 
           <p id="derechos">© 2021 Indie Hoy, todos los derechos reservados. </p>
@@ -291,7 +327,7 @@
 
   <script src="js/index.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

@@ -35,7 +35,6 @@ ul {
 }
 
 /* HEADER */
-
 .menunav :hover {
   color: #FF4820;
   transition: 0.5s;
@@ -100,7 +99,6 @@ ul {
 }
 
 /* Derecha - Buscador */
-
 .fecha {
   font-family: 'Roboto';
   width: 200px;
@@ -142,13 +140,11 @@ ul {
 
 .buscar:hover input {
   width: 240px;
-    transition: 0.5s;  
+  transition: 0.5s;
 }
 
 /* //  MAIN // */
-
 /* ////  CARROUSEL //// */
-
 .carrousel1 {
   text-decoration: none;
 }
@@ -214,7 +210,6 @@ ul {
 }
 
 /* ////  NOTICIAS DESTACADAS //// */
-
 .destacadas {
   position: relative;
   z-index: 100;
@@ -275,7 +270,6 @@ ul {
 }
 
 /* ////  SECCIONES //// */
-
 .degrade {
   margin-top: -10%;
   background-image: linear-gradient(0deg, #171717, transparent);
@@ -301,8 +295,94 @@ ul {
   width: 100%;
 }
 
-/* ////  FOOTER //// */
+/* ////  CAFE //// */
+.cafe {
+  background-image: url('../img/donacion.png');
+  height: 631px;
+  padding: 0px 250px;
+}
 
+@media screen and (max-width:1366px) {
+  .cafe {
+    background-position: center; /* Center the image */
+  }
+}
+
+#h1-caf {
+  font-size: 3em;
+}
+
+#p-caf {
+  margin-top: 16px;
+  display: block;
+  width: 40%;
+  height: auto;
+}
+
+.caf-box {
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+
+
+.caf-box:hover{
+background: rgba(255, 255, 255, 0.5);
+}
+.caf-options{
+  padding-top: 50px;
+}
+
+.caf-caption{
+  margin-left: 16px;
+  margin-right: 50px;
+  display: inline-block;
+  text-align: center;
+  height: 46px;
+  position: relative;
+  top: 40%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+.cafe-text {
+  padding-top: 120px;
+}
+
+.check{
+  width: 40px;
+  height: auto;
+}
+
+#check1{
+  display: none;
+}
+
+#check2{
+  display: none;
+}
+#check3{
+  display: none;
+}
+.btn-donar {
+  margin-top: 50px;
+  width: 250px;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+}
+.btn-donar:hover{
+  background-color: #D6D6D6;
+}
+
+/* ////  FOOTER //// */
 .footer {
   /*width: 100%;*/
   background-color: #171717;
@@ -394,6 +474,10 @@ ul {
   text-decoration: none;
 }
 
+#btn-spot:hover {
+  background-color: #C23617;
+}
+
 #p-footer {
   font-size: 18px;
 }
@@ -403,8 +487,48 @@ ul {
   font-size: 14px;
 }
 
+#btn-news:hover {
+  opacity: 0.7;
+}
+
+#play-btn:hover {
+  opacity: 0.7;
+}
+
+#f-1:hover {
+  opacity: 0.5;
+}
+
+#f-2:hover {
+  opacity: 0.5;
+}
+
+#f-3:hover {
+  opacity: 0.5;
+}
+
 #spotify {
   padding-left: 0px;
+}
+
+.spotify:hover {
+  opacity: 0.5;
+}
+
+.twitter:hover {
+  opacity: 0.5;
+}
+
+.instagram:hover {
+  opacity: 0.5;
+}
+
+.facebook:hover {
+  opacity: 0.5;
+}
+
+.youtube:hover {
+  opacity: 0.5;
 }
 
 .hr-footer-h {
