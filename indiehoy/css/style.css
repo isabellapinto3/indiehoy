@@ -21,7 +21,8 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 ul {
@@ -116,7 +117,12 @@ ul {
   align-items: end;
   justify-content: flex-end;
 }
-
+.perfil:hover{
+  opacity: 0.5;
+}
+#perfil:hover{
+  opacity: 0.5;
+}
 .buscar {
   display: flex;
 }
@@ -202,11 +208,17 @@ ul {
 
 .categoria {
   background-color: rgb(251, 75, 10);
-  padding: 5px;
+  padding:10px;
   border-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-top: 70%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.slider-descripcion{
+  display: inline-block;
+  width: 85%;
 }
 
 /* ////  NOTICIAS DESTACADAS //// */
@@ -238,9 +250,9 @@ ul {
   padding-left: 12%;
   margin-bottom: -29%;
   padding-right: 12%;
-  padding-top: 3%;
   /*padding-bottom: 10%;*/
 }
+
 
 .noticias_destacadas1 {
   background-image: url('../img/todas1.png');
@@ -261,6 +273,7 @@ ul {
 .noticias_destacadas_props {
   display: flex;
   flex-flow: wrap;
+
   background-position: center;
   margin-right: 2%;
   height: 400px;
