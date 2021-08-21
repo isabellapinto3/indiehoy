@@ -32,21 +32,38 @@ $(document).ready(function() {
 
 
     $("#caf-box1").click(function() {
+      if(one==false){
       $("#check1").show();
       $("#check2").hide();
       $("#check3").hide();
+      one=true;
+    }else{
+      $("#check1").hide();
+      one=false;
+    }
     });
 
     $("#caf-box2").click(function() {
+      if(two==false){
       $("#check2").show();
       $("#check1").hide();
       $("#check3").hide();
-
+      two=true;
+    }else{
+      $("#check2").hide();
+      two=false;
+    }
     });
     $("#caf-box3").click(function() {
+      if(three==false){
       $("#check3").show();
       $("#check2").hide();
       $("#check1").hide();
+      three=true;
+    }else{
+      $("#check3").hide();
+      three=false;
+    }
 
     });
 
